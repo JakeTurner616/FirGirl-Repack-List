@@ -1,2 +1,3 @@
 # FirGirl-Repack-List
- Unofficial FitGirl Repack List and associated web-scraper 
+ Unofficial FitGirl ![Repack List](./RepackList.txt) and associated web-scraper:
+
