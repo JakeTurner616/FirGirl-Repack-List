@@ -15,3 +15,26 @@ do
 done
 #cleanup:
 rm -rf test.html && rm -rf fitsource.txt && rm -rf test2.html
+#write out Download Mirror list to ~/links/fitgirl-repacks.site
+rm -rf ~/links/fitgirl-repacks.site
+touch ~/magnet.txt
+file=$(cat RepackList.txt)
+for line in $file
+do
+    pagename=$(cat RepackList.txt | sed -r 's/^.{29}//')
+    curl -sS "$line" > pagesource.txt
+    file=$(echo "$line" |sed 's/https\?:\/\///') 
+    mkdir -p ~/links/"$file" && touch ~/links/"$file"magnet.html
+    sed -n "/<h3>Download Mirrors<\/h3>/,/<h3>Screenshots (Click to enlarge)<\/h3>/p" pagesource.txt > ~/links/"$file"magnet.html
+    echo $(lynx -listonly -nonumbers --dump ~/links/"$file"magnet.html) > ~/links/"$file"magnet.html
+    touch ~/links/"$file"magnet.txt 
+    mv ~/links/"$file"magnet.html ~/links/"$file"magnet.txt
+    sed 's/ /\n/g' ~/links/"$file"magnet.txt > ~/links/"$file"magnet0.txt
+    rm -rf sed 's/ /\n/g' ~/links/"$file"magnet.txt
+    mv ~/links/"$file"magnet0.txt ~/links/"$file"magnet.txt
+    rm -rf sed 's/ /\n/g' ~/links/"$file"magnet0.txt
+    sudo chown -R $(whoami) ~/links
+done
+#cleanup
+rm -rf pagesource.txt
+rm -rf magnet.txt
