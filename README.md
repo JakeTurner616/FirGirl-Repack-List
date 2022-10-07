@@ -1,5 +1,5 @@
 # FitGirl-Repack-List
- Unofficial FitGirl ![Repack List](./RepackList.txt) and associated web-scrape scripts for either RepackList updating or updating + magnet extraction: 
+ Unofficial FitGirl ![Repack List](./RepackList.txt) and associated web-scrape scripts for either ![Repack list updating](./RepackUpdater.sh) or ![updating + magnet](./script.sh) extraction: 
 
 # RepackUpdater.sh 
 ![RepackUpdater.sh](./RepackUpdater.sh) simply creates an updated `RepackList.txt` file and places it into the scripts' working directory. 
