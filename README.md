@@ -13,7 +13,7 @@
 `RepackUpdater.sh` needs to be ran as a root/elevated user.
 
 # script.sh Limitations
-`script.sh` takes a long time. It creates and filters through a list of nearly 3000 links, all need to be pulled from the source of a parent file, and searched through individually. 
+`script.sh` takes a very long time to extract magnet links. It creates and filters through a list of nearly 3000 links, all need to be pulled from the source of a parent file, and searched through individually. 
 `script.sh` needs to be ran as a root/elevated user.
 
 
