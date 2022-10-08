@@ -1,5 +1,6 @@
 # FitGirl-Repack-List
- Unofficial FitGirl ![Repack List](./RepackList.txt) and associated web-scrape scripts for either ![Repack List Updating](./RepackUpdater.sh) or ![Updating + Magnet](./script.sh) extraction: 
+
+Unofficial FitGirl [(Updated) Repack List](https://files.serverboi.org/s/RepackList.txt) that refreshes every 24 hours / associated web-scrape scripts for  ![Repack List Updating](./RepackUpdater.sh) or ![Updating + Magnet](./script.sh) extraction:
 
 # RepackUpdater.sh 
 ![RepackUpdater.sh](./RepackUpdater.sh) simply creates an updated `RepackList.txt` file and places it into the scripts' working directory. 
