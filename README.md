@@ -1,3 +1,7 @@
+# Disclaimer
+
+Despite my continued willingness to support the concept, this project has been neglected for a considerable duration. It is highly likely that most if not all users will find much greater utility in exploring [this repository](https://github.com/JakeTurner616/FitGirl-Magnet-List) for a simpler and more reliable web scraping and magnet link extraction method of https://fitgirl-repacks.site/all-my-repacks-a-z/.
+
 # FitGirl-Repack-List
 
 Unofficial FitGirl [(Updated) Repack List](https://files.serverboi.org/s/RepackList.txt) that refreshes every 24 hours / associated web-scrape scripts for  ![Repack List Updating](./RepackUpdater.sh) or ![Updating + Magnet](./script.sh) extraction:
